@@ -1,0 +1,202 @@
+/* ============================================
+   Seção: Avaliações no Google (DB Mudanças)
+   ============================================ */
+
+.section-avaliacoes {
+  background: linear-gradient(180deg, var(--cinza-claro, #f5f5f5) 0%, var(--branco, #fff) 100%);
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.avaliacoes-titulo {
+  margin-bottom: 1.5rem;
+}
+
+/* Header da seção: nome, endereço, nota e link Google */
+.avaliacoes-header {
+  margin-bottom: 2rem;
+}
+
+.avaliacoes-resumo {
+  background: var(--branco);
+  border-radius: var(--raio, 1.5rem);
+  box-shadow: var(--sombra, 0 4px 20px rgba(0, 0, 0, 0.12));
+  padding: 1.5rem 1.75rem;
+  text-align: center;
+  width: 100%;
+}
+
+.avaliacoes-nome {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--azul-escuro, #0f2847);
+  margin-bottom: 0.35rem;
+}
+
+.avaliacoes-endereco {
+  font-size: 0.9rem;
+  color: var(--cinza-texto, #444);
+  margin: 0 0 1rem;
+  line-height: 1.45;
+}
+
+.avaliacoes-nota {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.avaliacoes-estrelas {
+  color: #fabb05;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+}
+
+.avaliacoes-numero {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--azul-escuro);
+}
+
+.avaliacoes-total {
+  font-size: 0.95rem;
+  color: var(--cinza-texto);
+}
+
+.avaliacoes-link-google {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--azul-claro, #2c5a87);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.avaliacoes-link-google:hover,
+.avaliacoes-link-google:focus {
+  color: var(--azul-escuro);
+  text-decoration: underline;
+}
+
+/* Lista de avaliações */
+.avaliacoes-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card de cada avaliação */
+.avaliacao-card {
+  background: var(--branco);
+  border-radius: var(--raio);
+  box-shadow: var(--sombra-leve, 0 4px 10px rgba(44, 90, 135, 0.12));
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(44, 90, 135, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.avaliacao-card:hover {
+  box-shadow: var(--sombra);
+  transform: translateY(-2px);
+}
+
+.avaliacao-cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.avaliacao-autor {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--azul-escuro);
+}
+
+.avaliacao-meta {
+  font-size: 0.85rem;
+  color: var(--cinza-texto);
+  opacity: 0.9;
+}
+
+.avaliacao-estrelas {
+  color: #fabb05;
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+}
+
+.avaliacao-data {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--cinza-texto);
+  opacity: 0.85;
+  margin-bottom: 0.65rem;
+}
+
+.avaliacao-texto {
+  margin: 0 0 1rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--cinza-texto);
+}
+
+/* Resposta do proprietário */
+.avaliacao-resposta {
+  background: var(--cinza-claro);
+  border-radius: 0.75rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--azul-claro);
+}
+
+.avaliacao-resposta-autor {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--azul-escuro);
+  margin-bottom: 0.35rem;
+}
+
+.avaliacao-resposta p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--cinza-texto);
+}
+
+/* Rodapé da seção */
+.avaliacoes-rodape {
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+.avaliacoes-rodape .avaliacoes-link-google {
+  font-size: 1rem;
+}
+
+/* Responsivo: 2 colunas em telas maiores */
+@media (min-width: 640px) {
+  .avaliacoes-lista {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .avaliacoes-lista {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

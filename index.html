@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Denis | Corretor de Imóveis &amp; Mudanças — Balneário Camboriú</title>
   <meta name="description" content="Compra, venda, aluguel de imóveis e mudança residencial. Imóveis e mudanças — solução completa com um só profissional. CRECI/SC 71270.">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="avaliacoes.css">
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <title>Denis | Corretor de Imóveis &amp; Mudanças — Balneário Camboriú</title>
 </head>
 <body>
   <header class="hero" id="inicio">
     <div class="hero-bg"></div>
     <div class="container hero-inner">
       <div class="hero-image-wrap">
-        <img src="images/hero-denis.png" alt="Denis Brauner — Corretor de Imóveis e Mudanças" class="hero-image" width="645" height="280" loading="eager" onerror="this.style.display='none'">
+        <img src="images/banner.png" alt="Denis Brauner — Corretor de Imóveis e Mudanças" class="hero-image" width="645" height="280" loading="eager" onerror="this.style.display='none'">
       </div>
-      <div class="hero-content">
+      <div class="hero-content" data-aos="zoom-in">
         <p class="hero-badge">Imóveis &amp; Mudanças — solução completa</p>
         <h1 class="hero-title">Corretor de Imóveis &amp; Mudanças</h1>
         <h2 class="hero-highlight"><strong>Encontre seu imóvel</strong> e faça a mudança sem dor de cabeça.</h2>
@@ -32,44 +38,49 @@
 
   <section class="section section-problema" aria-labelledby="problema-title">
     <div class="container">
-      <h2 id="problema-title" class="section-title">A gente entende você</h2>
+      <h2 id="problema-title" class="section-title" data-aos="fade-right">A gente entende você</h2>
       <div class="problema-content">
-        <p class="problema-text">Procurar imóvel já é difícil. Depois ainda tem papelada, burocracia e mudança.</p>
-        <p class="problema-text problema-destaque">Eu cuido de tudo para você entrar só com as malas.</p>
-        <p class="problema-cita">"Pois mudar automaticamente gera uma mudança."</p>
+        <p class="problema-text" data-aos="fade-left">Procurar imóvel já é difícil. Depois ainda tem papelada, burocracia e mudança.</p>
+        <p class="problema-text problema-destaque" data-aos="fade-right">Eu cuido de tudo para você entrar só com as malas.</p>
+        <p class="problema-cita" data-aos="fade-left">"Pois mudar automaticamente gera uma mudança."</p>
       </div>
     </div>
   </section>
 
   <section class="section section-oferta" aria-labelledby="oferta-title">
     <div class="container">
-      <h2 id="oferta-title" class="section-title">O que você tem em um só lugar</h2>
-      <p class="section-intro">Do imóvel à mudança — sem precisar procurar vários profissionais.</p>
+      <h2 id="oferta-title" class="section-title" data-aos="zoom-in">O que você tem em um só lugar</h2>
+      <p class="section-intro" data-aos="zoom-in">Do imóvel à mudança — sem precisar procurar vários profissionais.</p>
       <ul class="oferta-grid">
-        <li class="oferta-item">
+        <li class="oferta-item" data-aos="fade-down">
           <span class="oferta-icon" aria-hidden="true">🏠</span>
           <h3>Compra e venda</h3>
           <p>Imóveis em Balneário Camboriú e região</p>
         </li>
-        <li class="oferta-item">
+        <li class="oferta-item" data-aos="fade-down">
           <span class="oferta-icon" aria-hidden="true">🔑</span>
           <h3>Aluguel</h3>
           <p>Encontre o aluguel ideal com assessoria</p>
         </li>
-        <li class="oferta-item">
+        <li class="oferta-item" data-aos="fade-down">
           <span class="oferta-icon" aria-hidden="true">📋</span>
           <h3>Avaliação</h3>
           <p>Avaliação profissional do seu imóvel</p>
         </li>
-        <li class="oferta-item">
+        <li class="oferta-item" data-aos="fade-up">
           <span class="oferta-icon" aria-hidden="true">📦</span>
           <h3>Mudança residencial</h3>
           <p>Mudanças, embalagens e depósitos</p>
         </li>
-        <li class="oferta-item">
+        <li class="oferta-item" data-aos="fade-up">
           <span class="oferta-icon" aria-hidden="true">🚚</span>
           <h3>Transporte de móveis</h3>
           <p>Viagens para todo o Brasil — DB Mudanças</p>
+        </li>
+        <li class="oferta-item" data-aos="fade-up">
+          <span class="oferta-icon" aria-hidden="true">📝</span>
+          <h3>Assessoria imobiliária</h3>
+          <p>Suporte completo com contratos e documentação</p>
         </li>
       </ul>
     </div>
@@ -77,41 +88,122 @@
 
   <section class="section section-confianca" aria-labelledby="confianca-title">
     <div class="container">
-      <h2 id="confianca-title" class="section-title">Quem atende você:</h2>
+      <h2 id="confianca-title" class="section-title" data-aos="zoom-in">Quem atende você:</h2>
       <div class="confianca-grid">
-        <div class="confianca-card confianca-denis">
+        <div class="confianca-card confianca-denis" data-aos="fade-right">
           <img src="images/denis.png" alt="Denis Brauner" class="confianca-photo" width="120" height="120" loading="lazy" onerror="this.src='https://ui-avatars.com/api/?name=Denis+Brauner&size=120&background=2c5a87&color=fff'">
           <h3>Denis Brauner</h3>
           <p class="confianca-role">Corretor de Imóveis &amp; Mudanças</p>
-          <p class="confianca-creci">CRECI/SC — 71270</p>
-          <p class="confianca-bio">Um negócio que visa o conforto do cliente. Desde a compra ou aluguel da sua residência até o transporte da mudança — todo o auxílio que você precisa, em um só lugar.</p>
+          <p class="confianca-bio">Natural de Santa Maria – RS, hoje em Balneário Camboriú – SC, 38 anos. Mais de 20 anos em mudanças; desde 2020 à frente da DB Mudanças em BC. Em 2025, passei a atuar como Corretor de Imóveis — unindo venda, locação e transporte de mudanças. Meu compromisso: praticidade, segurança e tranquilidade, do negócio à mudança.</p>
         </div>
-        <div class="confianca-card confianca-db">
+        <div class="confianca-card confianca-db" data-aos="fade-left">
           <img src="images/db-mudancas.jpeg" alt="Logo DB Mudanças" class="confianca-photo" width="120" height="120" loading="lazy" onerror="this.src='https://ui-avatars.com/api/?name=DB+Mudanças&size=120&background=2c5a87&color=fff'">
           <div class="confianca-db-logo" aria-hidden="true">DB MUDANÇAS</div>
-          <p class="confianca-since">Since 2010</p>
-          <p>Mudanças, embalagens, depósitos e serviços completos conforme sua necessidade. Viagens para todo o Brasil.</p>
-          <p class="confianca-pagamento">Aceitamos cartões (Visa, Master, Elo, Hipercard). Condições conforme parcelas.</p>
+          <p class="confianca-since">Transportadora</p>
+          <p class="confianca-bio">Tudo para sua Mudança conforme sua necessidade. Serviço completo ou simples..</p>
+          <p class="confianca-bio">Mudanças, embalagens, depósitos e serviços. Viagens 
+            para todo o Brasil.</p>
+          <p class="confianca-bio">Localizada em Balneário Camboriú, Santa Catarina, Brasil.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="section section-avaliacoes" aria-labelledby="avaliacoes-title">
+    <div class="container">
+      <h2 id="avaliacoes-title" class="section-title avaliacoes-titulo" data-aos="zoom-in">Avaliações no Google</h2>
+      <div class="avaliacoes-header" data-aos="fade-up">
+        <div class="avaliacoes-resumo">
+          <span class="avaliacoes-nome">DB Mudanças</span>
+          <p class="avaliacoes-endereco">R. Portugal, 295 — Nações, Balneário Camboriú - SC, 88348-110</p>
+          <div class="avaliacoes-nota">
+            <span class="avaliacoes-estrelas" aria-label="4,9 de 5 estrelas">★★★★★</span>
+            <span class="avaliacoes-numero">4,9</span>
+            <span class="avaliacoes-total">76 avaliações</span>
+          </div>
+          <a href="https://www.google.com/maps/place/DB+Mudan%C3%A7as/@-26.9766035,-48.6423667,17z/data=!3m1!4b1!4m8!3m7!1s0x94d8c9ebf9a65093:0x41c4a32957fc4141!8m2!3d-26.9766035!4d-48.6423667!9m1!1b1!16s%2Fg%2F11b7q8vqxc" class="avaliacoes-link-google" target="_blank" rel="noopener">Ver no Google e avaliar</a>
+        </div>
+      </div>
+      <ul class="avaliacoes-lista" aria-label="Avaliações de clientes">
+        <li class="avaliacao-card" data-aos="fade-up">
+          <div class="avaliacao-cabecalho">
+            <span class="avaliacao-autor">Iara Benitez</span>
+            <span class="avaliacao-meta">Local Guide · 18 avaliações</span>
+          </div>
+          <div class="avaliacao-estrelas" aria-hidden="true">★★★★★</div>
+          <span class="avaliacao-data">um ano atrás</span>
+          <p class="avaliacao-texto">Muuuuito bons! Atendimento e serviço impecável. Fiz minha mudança e fiquei impressionada com o cuidado que tiveram com os meus móveis. Muita manta e plástico bolha para proteger tudo. Perfeito! Recomendo!</p>
+          <div class="avaliacao-resposta">
+            <span class="avaliacao-resposta-autor">DB Mudanças (proprietário)</span>
+            <p>Ola! Ficamos felizes com seu feedback. Muito obrigado! #DBMudancas</p>
+          </div>
+        </li>
+        <li class="avaliacao-card" data-aos="fade-up">
+          <div class="avaliacao-cabecalho">
+            <span class="avaliacao-autor">Osmar Rodrigues</span>
+            <span class="avaliacao-meta">Local Guide · 82 avaliações</span>
+          </div>
+          <div class="avaliacao-estrelas" aria-hidden="true">★★★★★</div>
+          <span class="avaliacao-data">8 meses atrás</span>
+          <p class="avaliacao-texto">A experiência com a DB Mudanças foi excelente! Equipe comprometida, cuidadosa, muito eficiente e organizada. Em 24 horas coletaram a mudança em Balneário Piçarras/SC e entregaram em Novo Hamburgo/RS. Super recomendo!</p>
+          <div class="avaliacao-resposta">
+            <span class="avaliacao-resposta-autor">DB Mudanças (proprietário)</span>
+            <p>Ola, Muito obrigado! Ficamos sempre a disposição. #DBMudancas — Denis Brauner (47) 99230-9902 / (55) 99199-9902</p>
+          </div>
+        </li>
+        <li class="avaliacao-card" data-aos="fade-up">
+          <div class="avaliacao-cabecalho">
+            <span class="avaliacao-autor">Raquel Zabot Assis</span>
+            <span class="avaliacao-meta">3 avaliações</span>
+          </div>
+          <div class="avaliacao-estrelas" aria-hidden="true">★★★★★</div>
+          <span class="avaliacao-data">um mês atrás</span>
+          <p class="avaliacao-texto">Atendimento ótimo! Pessoal muito atencioso! Excelente trabalho!</p>
+          <div class="avaliacao-resposta">
+            <span class="avaliacao-resposta-autor">DB Mudanças (proprietário)</span>
+            <p>Ola muito obrigado! Ficamos felizes e sempre a disposição. #DBMudancas — (47) 99230-9902</p>
+          </div>
+        </li>
+        <li class="avaliacao-card" data-aos="fade-up">
+          <div class="avaliacao-cabecalho">
+            <span class="avaliacao-autor">Aline Pipper</span>
+            <span class="avaliacao-meta">6 avaliações · 2 fotos</span>
+          </div>
+          <div class="avaliacao-estrelas" aria-hidden="true">★★★★★</div>
+          <span class="avaliacao-data">um ano atrás</span>
+          <p class="avaliacao-texto">Um atendimento impecável, muito atencioso, prestativo e sem contar a organização, minha mudança veio de Joinville SC à Santa Maria trouxeram minha moto, super seguro, super indico.<br>Somente gratidão 🙏</p>
+          <div class="avaliacao-resposta">
+            <span class="avaliacao-resposta-autor">DB Mudanças (proprietário)</span>
+            <p>Obrigado</p>
+          </div>
+        </li>
+      </ul>
+      <p class="avaliacoes-rodape">
+        <a href="https://www.google.com/maps/place/DB+Mudan%C3%A7as/@-26.9766035,-48.6423667,17z/data=!3m1!4b1!4m8!3m7!1s0x94d8c9ebf9a65093:0x41c4a32957fc4141!8m2!3d-26.9766035!4d-48.6423667!9m1!1b1!16s%2Fg%2F11b7q8vqxc" class="avaliacoes-link-google" target="_blank" rel="noopener">Ver todas as avaliações no Google</a>
+      </p>
+    </div>
+  </section>
+
   <section class="section section-atendimento" aria-labelledby="atendimento-title">
     <div class="container">
-      <h2 id="atendimento-title" class="section-title">Atendimento Presencial com horário marcado</h2>
-      <p class="atendimento-endereco">Balneário Camboriú - SC</p>
-      <p class="atendimento-obs">Agende sua visita pelo WhatsApp.</p>
-      <div class="mapa-embed">
-        <iframe loading="lazy" src="https://maps.google.com/maps?q=Balne%C3%A1rio+Cambori%C3%BA+SC&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near" title="Balneário Camboriú - SC" aria-label="Mapa de Balneário Camboriú - SC"></iframe>
+      <h2 id="atendimento-title" class="section-title" data-aos="zoom-in">Atendimento Presencial com horário marcado</h2>
+      <p class="atendimento-endereco" data-aos="zoom-in">Balneário Camboriú - SC</p>
+      <p class="atendimento-obs" data-aos="zoom-in">Agende sua visita pelo WhatsApp.</p>
+      <div class="mapa-embed" data-aos="flip-left">
+        <iframe
+          loading="lazy"
+          src="https://maps.google.com/maps?q=-26.9766035,-48.6423667&output=embed"
+          title="DB Mudanças - Balneário Camboriú"
+          aria-label="Mapa com marcador da DB Mudanças">
+        </iframe>
       </div>
     </div>
   </section>
 
   <section class="section section-cta" aria-labelledby="cta-title">
     <div class="container">
-      <h2 id="cta-title" class="section-title">Fale com a gente</h2>
-      <div class="cta-contatos cta-contatos-vertical">
+      <h2 id="cta-title" class="section-title" data-aos="zoom-in">Fale com a gente</h2>
+      <div class="cta-contatos cta-contatos-vertical" data-aos="fade-right">
         <a href="https://wa.me/5547989001908?text=Olá! Vim pelo site — quero saber sobre imóveis e mudanças." class="cta-row" target="_blank" rel="noopener">
           <svg class="cta-row-icon" aria-hidden="true" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
           <span class="cta-row-text">Denis Brauner - (47) 98900-1908</span>
@@ -124,7 +216,9 @@
           <svg class="cta-row-icon" aria-hidden="true" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
           <span class="cta-row-text">DB Mudanças - Santa Maria/RS - (55) 99199-9902</span>
         </a>
+      </div>
         <hr class="cta-sep-line" aria-hidden="true">
+      <div class="cta-contatos cta-contatos-vertical" data-aos="fade-left">
         <a href="mailto:denismb@creci.org.br" class="cta-row" target="_blank" rel="noopener">
           <svg class="cta-row-icon" aria-hidden="true" viewBox="0 0 512 512"><path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg>
           <span class="cta-row-text">denismb@creci.org.br</span>
@@ -140,7 +234,7 @@
       </div>
     </div>
   </section>
-
+  
   <footer class="footer">
     <div class="container">
       <p>Denis Brauner — Corretor de Imóveis (CRECI/SC 71270) &amp; DB Mudanças. Balneário Camboriú e todo o Brasil.</p>
@@ -160,5 +254,8 @@
       <svg aria-hidden="true" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
     </a>
   </div>
+
+
+  <script src="script.js"></script>
 </body>
 </html>

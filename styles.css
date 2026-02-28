@@ -10,7 +10,9 @@
   --cinza-texto: #444;
   --whatsapp: #25d366;
   --sombra: 0 4px 20px rgba(0, 0, 0, 0.12);
-  --raio: 12px;
+  --sombra-leve: 0 4px 10px rgb(44, 90, 135, 0.12);
+  --sombra-forte: 0 4px 40px rgba(0, 0, 0, 0.25);
+  --raio: 1.5rem;
   --transicao: 0.2s ease;
 }
 
@@ -77,13 +79,41 @@ body {
 }
 
 .hero-image-wrap {
+  cursor: pointer;
+  --rotate-x: 0;
+  --rotate-y: 0;
   max-width: 645px;
   width: 100%;
   min-height: 140px;
   border-radius: var(--raio);
   overflow: hidden;
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra-forte);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transform: perspective(1000px) rotateX(var(--rotate-x)) rotateY(var(--rotate-y)) scale(var(--scale, 1));
+  transition: transform 0.15s ease-out, box-shadow 0.2s ease;
+}
+
+.hero-image-wrap:hover {
+  --scale: 1.02;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Animação flip-left manual para o card do hero */
+.hero-image-wrap.flip-left-enter {
+  animation: heroFlipLeft 1.5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
+}
+
+@keyframes heroFlipLeft {
+  from {
+    transform: perspective(1000px) rotateY(-100deg) scale(1);
+    opacity: 0.3;
+  }
+  to {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg) scale(1);
+    opacity: 1;
+  }
 }
 
 .hero-image {
@@ -265,15 +295,18 @@ body {
   background: var(--branco);
   padding: 1.75rem;
   border-radius: var(--raio);
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra-leve);
   text-align: center;
   border: 1px solid rgba(15, 40, 71, 0.08);
   transition: border-color var(--transicao), box-shadow var(--transicao);
+  cursor: pointer;
 }
 
 .oferta-item:hover {
   border-color: var(--dourado);
   box-shadow: 0 8px 28px rgba(201, 162, 39, 0.15);
+  transform: scale(1.05);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-in;
 }
 
 .oferta-icon {
